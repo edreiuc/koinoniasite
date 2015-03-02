@@ -1,195 +1,63 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<?php
+ include 'header.php';
+?>
+<div id="content" class="site-content">
 
-    <!-- Mobile Specific 
-    ========================================================================= -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+                <div id="home-slider-1" class="royalSlider rsMinW">
 
-    <!-- Title Tag
-    ========================================================================= -->
-    <title>Koinonia-BAND</title>
-
-    <!-- Browser Specical Files
-    ========================================================================= -->
-    <!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    
-    <!-- Site Favicon
-    ========================================================================= -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico"/> 
-
-    <!-- WP HEAD
-    ========================================================================= -->
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="assets/css/semantic.min.css">
-    <link rel="stylesheet" href="assets/css/royalslider.css">
-    <link rel="stylesheet" href="assets/css/rs-default.css">
-    <link rel="stylesheet" href="assets/css/music-player.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Header JS -->
-    <script src="assets/js/jquery-1.11.1.min.js"></script>
-    
-</head>
-<body>
-
-	<div id="page" class="hfeed site">
-		
-		<header id="masthead" class="ui page site-header" role="banner">
-
-            <div id="search-container" class="search-box-wrapper">
-                <div class="container">
-                    <i class="big search icon"></i>
-                    <div class="search-box">
-                        <form action="http://example.com/" class="search-form" role="search" >
-                            <label>
-                                <span class="screen-reader-text">Search for:</span>
-                                <input type="search" name="s" value="" title="Press Enter to submit your search" placeholder="Search…" class="search-field">
-                            </label>
-                            <input type="submit" value="Search" class="search-submit">
-                        </form>
+                  <div class="rsContent slide2">
+                    <a class="rsImg" href="thumb/slider1.jpg">Slider1</a>
+                    <div class="bContainer">
+                        <div class="rsABlock rs_text rs_text_meta" data-move-effect="top">sitio web koinonia</div>
+                        <div class="rsABlock rs_text_box" data-move-effect="bottom">
+                            <span>=== BIENVENIDO ===</span>
+                        </div>
+                        <div class="rsABlock" data-move-effect="bottom">
+                            <a href="#" class="ui huge button colored">Me gusta</a>
+                        </div>
                     </div>
-                </div>
-            </div><!--/ #search-container -->
+                  </div>
 
-            <div class="topbar">
-                <div class="container">
-                    <div class="topbar_left fleft">
-                        <nav class="topbar_menu_left">
-                            <ul>
-                                <li><a href="index.html">Inicio</a></li>
-                                <li><a href="">La banda</a></li>
-                                <li><a href="">Contacto</a></li>
-                            </ul>
-                        </nav>
+                  <div class="rsContent slide1">
+                    <a class="rsImg" href="thumb/slider2.jpg">Slider 2</a>
+                    <div class="bContainer">
+                        <div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Canta, Danza, Grita, Regozijate</div>
+                        <div class="rsABlock rs_text_box" data-move-effect="bottom">
+                            <span>Disfruta la Alabanza</span>
+                        </div>
+                        <div class="rsABlock" data-move-effect="bottom">
+                            <a href="#" class="ui huge button colored">Acompañanos</a>
+                        </div>
                     </div>
-                   
-                </div>
-            </div> <!-- END .topbar -->
+                  </div>
 
-            <div class="header">
-                <div class="container">
-                    <div class="logo_area fleft">
-                        <a href="index.html" rel="home">
-                            <img src="assets/images/logo.png" alt="Site Logo">
-                        </a>
+                  <div class="rsContent slide3 rsVideo">
+                    <a class="rsImg" href="thumb/slider3.jpg" data-rsvideo="https://www.youtube.com/watch?v=m6grs-tLvRg" data-rsw="1038" data-rsh="500">Slider 3</a>
+                    <div class="bContainer">
+                        <div class="rsABlock rs_text rs_text_meta" data-move-effect="top"> </div>
+                        <div class="rsABlock rs_text_box" data-move-effect="bottom">
+                            <span>Video Tu eres (PREZ)</span>
+                        </div>
                     </div>
-                    
-                </div>
-            </div> <!-- END .header -->
+                  </div>
 
-		</header><!-- END #masthead -->
-
-        <div id="boxed_content" class="boxed_content">
-            <div class="inner">
-            
-            <nav id="primary-navigation" class="site-navigation primary-navigation clearfix" role="navigation">
-                <button class="menu-toggle">Navigation</button>
-                <a href="#content" class="screen-reader-text skip-link">Skip to content</a>
-                <div class="menu-all-pages-container">
-                    <ul class="nav-menu">
-                        <li class="current-menu-item"><a href="index.html">Inicio</a></li>
-                        <li class="menu-item-has-children"><a>Eventos</a>
-                            <ul class="sub-menu">
-                                <li><a href="">Lista de eventos</a></li>
-                                <li><a href="">Proximo Evento</a></li>
-                            </ul>
-                        </li>
-                        
-                        <li class="menu-item-has-children"><a>Galeria</a>
-                            <ul class="sub-menu">
-                                <li><a href="">Nuestros Videos</a></li>
-                                <li><a href="">Videos de Interes</a></li>
-                                <li><a href="">Fotografias</a></li>
-                            </ul>
-                        </li>
-                       
-                        <li class="menu-item-has-children"><a>Mas</a>
-                            <ul class="sub-menu">
-                                <li><a href="">Nosotros</a></li>
-                                <li><a href="">Contacto</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <ul class="header_social">
-                    <li><a href="#" title="Twitter"><i class="large twitter icon popup" data-content="Twitter" data-variation="inverted"></i></a></li>
-                    <li><a href="#" title="Facebook"><i class="large facebook icon popup" data-content="Facebook" data-variation="inverted"></i></a></li>
-                    <li><a href="#" title="Youtube"><i class="large youtube play icon popup" data-content="Youtube" data-variation="inverted"></i></a></li>
-                    <li><a href="#" title="Google Plus"><i class="large google plus icon popup" data-content="Google Plus" data-variation="inverted"></i></a></li>
-                    <li><a href="#" title="SoundCloud"><i class="large soundcloud icon popup" data-content="Soundcloud" data-variation="inverted"></i></a></li>
-                </ul>
-            </nav>
-
-
-
-
-
-			<div id="content" class="site-content">
-
-				<div id="home-slider-1" class="royalSlider rsMinW">
-
-				  <div class="rsContent slide2">
-				    <a class="rsImg" href="thumb/slider1.jpg">Slider1</a>
-				    <div class="bContainer">
-				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">sitio web koinonia</div>
-				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
-				    		<span>=== BIENVENIDO ===</span>
-				    	</div>
-				    	<div class="rsABlock" data-move-effect="bottom">
-				    		<a href="#" class="ui huge button colored">Me gusta</a>
-				    	</div>
-				    </div>
-				  </div>
-
-				  <div class="rsContent slide1">
-				    <a class="rsImg" href="thumb/slider2.jpg">Slider 2</a>
-				    <div class="bContainer">
-				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Canta, Danza, Grita, Regozijate</div>
-				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
-				    		<span>Disfruta la Alabanza</span>
-				    	</div>
-				    	<div class="rsABlock" data-move-effect="bottom">
-				    		<a href="#" class="ui huge button colored">Acompañanos</a>
-				    	</div>
-				    </div>
-				  </div>
-
-				  <div class="rsContent slide3 rsVideo">
-				    <a class="rsImg" href="thumb/slider3.jpg" data-rsvideo="https://www.youtube.com/watch?v=m6grs-tLvRg" data-rsw="1038" data-rsh="500">Slider 3</a>
-				    <div class="bContainer">
-				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top"> </div>
-				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
-				    		<span>Video Tu eres (PREZ)</span>
-				    	</div>
-				    </div>
-				  </div>
-
-				  <div class="rsContent slide4">
-				    <a class="rsImg" href="thumb/slider4.jpg">Slider 3</a>
-				    <div class="bContainer">
-				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">¿Tienes un evento?</div>
-				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
-				    		<span>COMENTANOS</span>
-				    	</div>
-				    	<div class="rsABlock" data-move-effect="bottom">
-				    		<a href="#" class="ui huge button colored">contacto</a>
-				    	</div>
-				    </div>
-				  </div>
-				  
-				</div> <!-- END royalSlider -->
-				
-				<div class="page-inner">
-					<div class="container">
+                  <div class="rsContent slide4">
+                    <a class="rsImg" href="thumb/slider4.jpg">Slider 3</a>
+                    <div class="bContainer">
+                        <div class="rsABlock rs_text rs_text_meta" data-move-effect="top">¿Tienes un evento?</div>
+                        <div class="rsABlock rs_text_box" data-move-effect="bottom">
+                            <span>COMENTANOS</span>
+                        </div>
+                        <div class="rsABlock" data-move-effect="bottom">
+                            <a href="#" class="ui huge button colored">contacto</a>
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div> <!-- END royalSlider -->
+                
+                <div class="page-inner">
+                    <div class="container">
                         
                         <section class="top_feature">
                             <div class="two column stackable ui grid">
@@ -314,8 +182,8 @@
 
                         
 
-						<div id="primary" class="content-area">
-							
+                        <div id="primary" class="content-area">
+                            
                             <div class="recent_news">
                                 <h4 class="widget_heading">Recientes Actividades</h4>
 
@@ -410,10 +278,10 @@
                                 
                             </div>
 
-						</div> <!-- END #primary -->
+                        </div> <!-- END #primary -->
 
-						<div id="secondary" class="widget-area" role="complementary">
-							<aside class="widget event_widget">
+                        <div id="secondary" class="widget-area" role="complementary">
+                            <aside class="widget event_widget">
                                 <h4 class="widget-title">Novedades</h4>
                                 <div class="widget-content">
 
@@ -477,130 +345,19 @@
                                 </div>
                             </aside>
 
-						</div> <!-- END secondary -->                                
+                        </div> <!-- END secondary -->                                
 
-					</div><!--/.container -->
+                    </div><!--/.container -->
                     
                     
 
-				</div> <!-- END .page-inner -->
+                </div> <!-- END .page-inner -->
 
-			</div><!-- END #content -->
+            </div><!-- END #content -->
 
             </div>
-		</div> <!-- END #boxed-wrapper -->
+</div> <!-- END #boxed-wrapper -->
 
-        <footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="container">
-                <div class="inner">
-                    <div class="four column stackable doubling ui grid">
-                        <div class="column">
-                            <aside class="widget">
-                                <h4 class="widget_heading">Koino info</h4>
-                                <div class="widget_content">
-                                    <p>Siguenos en las redes sociales para mantenerte informado</p>
-                                    <a href="#" class="tiny ui twitter button"><i class="twitter icon"></i>Twitter</a>
-                                    <a href="#" class="tiny ui facebook button"><i class="facebook icon"></i>FaceBook</a>
-                                    <a href="#" class="tiny ui spotify button"><i class="spotify icon"></i>Spotify</a>
-                                    <a href="#" class="tiny ui soundcloud button"><i class="soundcloud icon"></i>SoundCloud</a>
-                                </div>
-                            </aside>
-                        </div>
-                        <div class="column">
-                            <aside class="widget widget_nav_menu">
-                                <h4 class="widget_heading">Descubre mas</h4>
-                                <div class="widget_content">
-                                    <ul>
-                                        <li><a href="#">Nuestra historia</a></li>
-                                        <li><a href="#">Equipo</a></li>
-                                        <li><a href="#">Preguntas</a></li>
-                                    </ul>
-                                </div>
-                            </aside>
-                        </div>
-                        <div class="column">
-                            <aside class="widget widget_nav_menu">
-                                <h4 class="widget_heading">Visita nuestras paginas</h4>
-                                <div class="widget_content">
-                                    <ul>
-                                        <li><a href="#">Galerias</a></li>
-                                        <li><a href="#">Videos</a></li>
-                                        <li><a href="#">Mapa del sitio</a></li>
-                                    </ul>
-                                </div>
-                            </aside>
-                        </div>
-                        <div class="column">
-                            <aside class="widget widget_twitter">
-                                <center>
-                                    <img src="assets/images/k.png" alt="Site Logo">
-                                </center>
-                                    
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="footer_copy">
-                    <div class="two column stackable ui grid">
-                        <div class="column copy_left">
-                            <p><a href="#">Koinonia web</a> Copyright © 2015. Todos los Derechos Reservados</p>
-                        </div>
-                        <div class="column copy_right">
-                            <p>sitio web elaborado por <a href="http://edreiuc.esy.es/" target="_blank">UC ANGULO Samuel Edrei</a></p>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-		</footer><!-- END #colophon-->
-
-	</div><!-- END #page -->
-
-    <!-- Footer JS -->
-    <script src="assets/js/libs/semantic.min.js"></script>
-    <script src="assets/js/libs/fitVids.min.js"></script>
-    <script src="assets/js/libs/retina.min.js"></script>
-    <script src="assets/js/libs/jquery.plugin.min.js"></script>
-    <script src="assets/js/libs/jquery.countdown.min.js"></script>
-    <script src="assets/js/libs/jquery.royalslider.min.js"></script>
-    <script src="assets/js/libs/jquery.easing-1.3.js"></script>
-    <script src="assets/js/libs/jquery.jplayer.js"></script>
-    <script src="assets/js/libs/ttw-music-player.js"></script>
-    <script src="assets/js/libs/owl.carousel.min.js"></script>
-    <script src="assets/js/libs/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/libs/jquery.imagesloaded.min.js"></script>
-    <script src="assets/js/libs/isotope.pkgd.min.js"></script>
-    <script src="assets/js/global.js"></script>
-
-    <script id="addJS">
-        jQuery(document).ready(function($) {
-                jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
-                    $('#home-slider-1').royalSlider({
-                    arrowsNav: true,
-                    arrowsNavAutoHide: true,
-                    fadeinLoadedSlide: false,
-                    controlNavigationSpacing: 0,
-                    controlNavigation: 'bullets',
-                    imageScaleMode: 'none',
-                    imageAlignCenter:false,
-                    blockLoop: true,
-                    loop: true,
-                    numImagesToPreload: 6,
-                    transitionType: 'fade',
-                    keyboardNavEnabled: true,
-                    autoPlay: {
-                        // autoplay options go gere
-                        enabled: true,
-                        pauseOnHover: true,
-                        stopAtAction: false,
-                        delay: 7000
-                    },
-                    block: {
-                        delay: 300
-                    }
-                });
-        });
-    </script>
-
-</body>
-</html>
+<?php
+include 'footer.php';
+?>
