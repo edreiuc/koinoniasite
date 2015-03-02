@@ -65,7 +65,7 @@
                         <nav class="topbar_menu_left">
                             <ul>
                                 <li><a href="index.php">Inicio</a></li>
-                                <li><a href="">La banda</a></li>
+                                <li><a href="nosotros.php">La banda</a></li>
                                 <li><a href="contacto.php">Contacto</a></li>
                             </ul>
                         </nav>
