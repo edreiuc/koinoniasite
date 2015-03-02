@@ -15,7 +15,7 @@ include 'header.php';
                             </header>
 
                             <div class="entry-content">
-                                <div class="map-contact">
+                                <div class="map-contact">hp
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d932.2193051382467!2d-89.36307570674589!3d20.836663881457334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5689a6d673e1f5%3A0xdb35fb5acd639cac!2zMjAsIDk3NTcwIFNlecOpLCBZdWMu!5e0!3m2!1ses-419!2smx!4v1425273519057" width="100%" height="250" frameborder="0" style="border:0"></iframe>
                                     <div class="address ui three doubling column grid">
                                         <div class="column">
