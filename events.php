@@ -1,4 +1,7 @@
 <?php
+require_once('clases/medoo.php');
+$database = new medoo();
+$datas = $database->select("evento", "*",["ORDER" => "evento.evento DESC"]);
 include 'header.php';
 ?>
 
@@ -16,34 +19,22 @@ include 'header.php';
                             <div class="events_page">
                                 
                                 <div class="event_widget">
-                                    
-                                    <article  class="post event_item dark_shadow clearfix">
-                                        <div class="event_left">
-                                            <div class="event_date">18</div>
-                                            <div class="event_month">Feb</div>
-                                        </div>
-                                        <div class="event_detail">
-                                            <h2 class="event_title"><a href="single_event.html">koinonia test</a></h2>
-                                            <div class="event_time"><i class="time icon"></i> February 18, 2014 a 9:00 AM</div>
-                                            <div class="event_location"><i class="map marker icon"></i> Merida, yucatan, 97000 </div>
-                                            <a href="#" class="event_button ui button ">Mas info</a>
-                                        </div>
-                                    </article>
-
-                                    <article  class="post event_item dark_shadow clearfix">
-                                        <div class="event_left">
-                                            <div class="event_date">18</div>
-                                            <div class="event_month">Feb</div>
-                                        </div>
-                                        <div class="event_detail">
-                                            <h2 class="event_title"><a href="single_event.html">koinonia test</a></h2>
-                                            <div class="event_time"><i class="time icon"></i> February 18, 2014 a 9:00 AM</div>
-                                            <div class="event_location"><i class="map marker icon"></i> Merida, yucatan, 97000 </div>
-                                            <a href="#" class="event_button ui button ">Mas info</a>
-                                        </div>
-                                    </article>
-
-                                    
+                                    <?php foreach ($datas as $data) {
+                                       echo '
+                                            <article  class="post event_item dark_shadow clearfix">
+                                                <div class="event_left">
+                                                    <div class="event_date">'; $time= strtotime($data['fecha']); echo date('d', $time);  echo '</div>
+                                                    <div class="event_month">';  echo date('M', $time); echo '</div>
+                                                </div>
+                                                <div class="event_detail">
+                                                    <h2 class="event_title"><a href="single_event.html">'.$data['evento'].'</a></h2>
+                                                    <div class="event_time"><i class="time icon"></i> '.$data['fecha'].'</div>
+                                                    <div class="event_location"><i class="map marker icon"></i> '.$data['direccion'].'</div>
+                                                    <a href="#" class="event_button ui button ">Mas info</a>
+                                                </div>
+                                            </article>   
+                                       ';
+                                    } ?>                                 
                                 </div>
 
                             </div>

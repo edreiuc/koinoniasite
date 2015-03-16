@@ -30,7 +30,7 @@ include 'header.php';
                                             <div class="overlay"></div>
                                             <div class="overlay_title">
                                                 <h2>Gustavo Angulo</h2>
-                                                <p>Vocalista principal</p>
+                                                <p>Vocalista</p>
                                             </div>
                                         </a>
                                     </div>
@@ -43,7 +43,7 @@ include 'header.php';
                                             <div class="overlay"></div>
                                             <div class="overlay_title">
                                                 <h2>David Cano</h2>
-                                                <p>Coro</p>
+                                                <p>Coro, Percusiones</p>
                                             </div>
                                         </a>
                                     </div>
@@ -69,7 +69,7 @@ include 'header.php';
                                             <div class="overlay"></div>
                                             <div class="overlay_title">
                                                 <h2>Daniel Pech</h2>
-                                                <p>Guitarras, Piano, Loops</p>
+                                                <p>Guitarras, Piano, Programacíon</p>
                                             </div>
                                         </a>
                                     </div>
@@ -82,7 +82,7 @@ include 'header.php';
                                             <div class="overlay"></div>
                                             <div class="overlay_title">
                                                 <h2>Jared Cano</h2>
-                                                <p>Bajo 6 cuerdas</p>
+                                                <p>Bajo</p>
                                             </div>
                                         </a>
                                     </div>

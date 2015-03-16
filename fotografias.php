@@ -2,67 +2,141 @@
 include 'header.php';
 ?>
 
-<div id="content" class="site-content">
+            <div id="content" class="site-content">
 
-				<div class="page-inner">
-					<div class="container">
+                <div class="page-inner">
+                    <div class="container">
                         
                         <header class="page-header">
-                            <h1 class="page-title">Fotografías</h1>
+                            <div class="ui two column stackable grid">
+                                <div class="column">
+                                    <h1 class="page-title">Filterable Gallery</h1>
+                                </div>
+                                <div class="column">
+                                    <div class="filterable-menu">
+                                        <a data-filter="*" href="#" class="ui button colored selected">Filter All</a>
+                                        <a data-filter=".show" href="#" class="ui button">The Show</a>
+                                        <a data-filter=".parties" href="#" class="ui button">Parties</a>
+                                        <a data-filter=".interview" href="#" class="ui button">Interview</a>
+                                        <a data-filter=".band" href="#" class="ui button">The Band</a>
+                                    </div>
+                                </div>
+                            </div>
                         </header>
-						
+                        
                         <div class="page-content">
 
-                            <div id="gallery-slideshow" class="royalSlider rsDefault">
-                                <a class="rsImg" data-rsw="940" data-rsh="500" data-rsbigimg="thumb/gallery/gallery1.jpg" href="thumb/gallery/gallery1_940_500.jpg">Vincent van Gogh - Still Life: Vase with Twelve Sunflowers<img class="rsTmb" src="thumb/gallery/gallery1_96_72.jpg" height="72" width="96"></a>
-                                <a class="rsImg" data-rsw="940" data-rsh="500" data-rsbigimg="thumb/gallery/gallery2.jpg" href="thumb/gallery/gallery2_940_500.jpg">Vincent van Gogh - Still Life: Vase with Twelve Sunflowers<img class="rsTmb" src="thumb/gallery/gallery2_96_72.jpg" height="72" width="96"></a>
-                                <a class="rsImg" data-rsw="940" data-rsh="500" data-rsbigimg="thumb/gallery/gallery3.jpg" href="thumb/gallery/gallery3_940_500.jpg">Vincent van Gogh - Still Life: Vase with Twelve Sunflowers<img class="rsTmb" src="thumb/gallery/gallery3_96_72.jpg" height="72" width="96"></a>
-                                <a class="rsImg" data-rsw="940" data-rsh="500" data-rsbigimg="thumb/gallery/gallery4.jpg" href="thumb/gallery/gallery4_940_500.jpg">Vincent van Gogh - Still Life: Vase with Twelve Sunflowers<img class="rsTmb" src="thumb/gallery/gallery4_96_72.jpg" height="72" width="96"></a>
-                                <a class="rsImg" data-rsw="940" data-rsh="500" data-rsbigimg="thumb/gallery/gallery5.jpg" href="thumb/gallery/gallery5_940_500.jpg">Vincent van Gogh - Still Life: Vase with Twelve Sunflowers<img class="rsTmb" src="thumb/gallery/gallery5_96_72.jpg" height="72" width="96"></a>
-                                <a class="rsImg" data-rsw="940" data-rsh="500" data-rsbigimg="thumb/gallery/gallery6.jpg" href="thumb/gallery/gallery6_940_500.jpg">Vincent van Gogh - Still Life: Vase with Twelve Sunflowers<img class="rsTmb" src="thumb/gallery/gallery6_96_72.jpg" height="72" width="96"></a>
+                            <div id="gallery-grid" class="gallery-filterable isotope ui grid">
 
-
+                                <div class="four wide column isotope-item show">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery1.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery1_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="four wide column isotope-item parties">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery2.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery2_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="four wide column isotope-item interview">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery3.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery3_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="four wide column isotope-item band">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery4.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery4_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="four wide column isotope-item parties">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery5.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery5_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="four wide column interview">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery6.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery6_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="four wide column isotope-item band">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery7.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery7_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="four wide column isotope-item interview">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery8.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery8_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="four wide column isotope-item parties">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery9.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery9_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="four wide column isotope-item parties">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery1.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery1_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="four wide column isotope-item band">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery4.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery4_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="four wide column isotope-item show">
+                                    <div class="image-lightbox">
+                                        <a class="popup-image" href="thumb/gallery/gallery2.jpg" title="Caption. Can be aligned it to any side and contain any HTML.">
+                                            <img src="thumb/gallery/gallery2_940_500.jpg" alt="">
+                                            <span class="image-button"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            <script type="text/javascript">
-                                jQuery(document).ready(function($) {
-                                  $('#gallery-slideshow').royalSlider({
-                                    fullscreen: {
-                                      enabled: true,
-                                      nativeFS: true
-                                    },
-                                    controlNavigation: 'thumbnails',
-                                    autoScaleSlider: true, 
-                                    autoScaleSliderWidth: 960,     
-                                    autoScaleSliderHeight: 600,
-                                    loop: false,
-                                    imageScaleMode: 'fit-if-smaller',
-                                    navigateByClick: true,
-                                    numImagesToPreload:2,
-                                    arrowsNav:true,
-                                    arrowsNavAutoHide: true,
-                                    arrowsNavHideOnTouch: true,
-                                    keyboardNavEnabled: true,
-                                    fadeinLoadedSlide: true,
-                                    globalCaption: false,
-                                    globalCaptionInside: false,
-                                    thumbs: {
-                                      appendSpan: true,
-                                      firstMargin: true,
-                                      paddingBottom: 4
-                                    }
-                                  });
-                                });
-                            </script>
                            
                         </div> <!--/ .page-content -->
 
-					</div>
-				</div> <!-- END .page-inner -->
+                    </div>
+                </div> <!-- END .page-inner -->
 
-			</div><!-- END #content -->
+            </div><!-- END #content -->
 
             </div>
-		</div> <!-- END #boxed-wrapper -->
+        </div> <!-- END #boxed-wrapper -->
 
 
 <?php
