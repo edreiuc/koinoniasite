@@ -15,7 +15,8 @@ if(!empty($_POST['accion']))
         "descripcion" => $_POST['descripcion'],
         "direccion" => $_POST['direccion'],
         "status" => $_POST['status'],
-        "fecha" => $_POST['fecha']
+        "fecha" => $_POST['fecha'],
+        "embed" => $_POST['map']
         
         ]); 
 
@@ -90,7 +91,16 @@ include ('header.php');
                                                                         <input class="span6" type="text" size="100" name="direccion" placeholder="Ingrese la direccion" required />
                                                                     </div>
                                                                 </li>
-                                                                <!-- // form item -->  
+                                                                <!-- // form item -->
+
+                                                                <li class="control-group">
+                                                                    <label class="control-label">Embed map <span>*</span></label>
+                                                                    <div class="controls">
+                                                                        <input class="span12" type="text" name="map" placeholder="Ingrese el codigo src del embed google maps" required />
+                                                                    </div>
+                                                                </li>
+                                                                <!-- // form item -->   
+                                                                
 
                                                                 <li class="control-group">
                                                                     <label class="control-label">Fecha<span>*</span></label>

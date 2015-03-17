@@ -282,47 +282,9 @@
 
                         <div id="secondary" class="widget-area" role="complementary">
                             <aside class="widget event_widget">
-                                <h4 class="widget-title">Novedades</h4>
+                                <h4 class="widget-title">Seguidores</h4>
                                 <div class="widget-content">
-
-                                    <article class="post">
-                                        <div class="event_left">
-                                            <div class="event_date">16</div>
-                                            <div class="event_month">Feb</div>
-                                        </div>
-                                        <div class="event_detail">
-                                            <h2 class="event_title"><a href="#">Festival cristiano</a></h2>
-                                            <div class="event_time"><i class="time icon"></i> Febrero 16, 2015  9:00 AM</div>
-                                            <div class="event_location"><i class="map marker icon"></i> Merida, 97000</div>
-                                            <a href="#" class="event_button ui button">Mas info</a>
-                                        </div>
-                                    </article>
-                                    <article class="post">
-                                        <div class="event_left">
-                                            <div class="event_date">26</div>
-                                            <div class="event_month">Mar</div>
-                                        </div>
-                                        <div class="event_detail">
-                                            <h2 class="event_title"><a href="#">Taller de musica</a></h2>
-                                            <div class="event_time"><i class="time icon"></i> Marzo 26, 2015  8:00 AM</div>
-                                            <div class="event_location"><i class="map marker icon"></i> Merida, 97000</div>
-                                            <a href="#" class="event_button ui button">Cancelado</a>
-                                        </div>
-                                    </article>
-
-                                    <article class="post">
-                                        <div class="event_left">
-                                            <div class="event_date">29</div>
-                                            <div class="event_month">Mar</div>
-                                        </div>
-                                        <div class="event_detail">
-                                            <h2 class="event_title"><a href="#">Concierto cena</a></h2>
-                                            <div class="event_time"><i class="time icon"></i> Marzo 29, 2015 8:00 AM</div>
-                                            <div class="event_location"><i class="map marker icon"></i> Uman, 97390</div>
-                                            <a href="#" class="event_button ui button">Mas info</a>
-                                        </div>
-                                    </article>
-
+                                  <div class="fb-like-box" data-href="https://www.facebook.com/koinoniaband" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
                                 </div>
                             </aside>
 
