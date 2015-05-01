@@ -40,7 +40,8 @@ include ('header.php');
 
 <div id="main-content" class="main-content container-fluid">
             <div class="row-fluid page-head">
-                <h2 class="page-title"><i class="fontello-icon-calendar-1"></i> Evento <small>Registro nuevo</small></h2>
+                <h2 class="page-title"><i class="fontello-icon-calendar-1"></i>Evento <small>Registro nuevo</small></h2>
+                <p class="pagedesc">registro de eventos nuevos</p>
                 <div class="page-bar">
                     <div class="btn-toolbar"> </div>
                 </div>
@@ -136,7 +137,6 @@ include ('header.php');
 
                                                         <div class="form-actions">
                                                             <button type="submit" class="btn btn-blue" id="idSubmit">Validar registro</button>
-                                                            <button class="btn cancel">Cancelar</button>
                                                         </div>
                                                     </div>
                                                 </div>

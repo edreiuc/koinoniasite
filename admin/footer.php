@@ -136,6 +136,9 @@
 <!--DATA PICKER -->
 <script src="assets/js/bootstrap-datetimepicker.min.js"></script> 
 
+<!-- WISYNG -->
+<script src="assets/js/demo/demo-wisyhtml5.js"></script>
+
 <!-- jsPDF -->
 <?php
  if ($page=='crearResultado') {
@@ -166,12 +169,14 @@ $(function() {
         startDate: today,
         endDate: Infinity
         
-    });
-
-    
-    
+    });    
 });
 
+
+
+$(function () {
+                $('#datetimepicker0').datetimepicker();
+});
 
    $('.open-suprim').click(function(e){
                var Even = $(this).data('id');
@@ -179,11 +184,11 @@ $(function() {
                $("#titulo-borrado").text(SHOW);
                $(".modal-footer #eventoid").val(Even);
           });
-   $('.open-suprim-paciente').click(function(e){
-               var Pac = $(this).data('id');
-               var Paciente = "PACIENTE : " + $(this).data('titulo');
-               $("#titulo-borrado").text(Paciente);
-               $(".modal-footer #pacienteid").val( Pac);
+   $('.open-suprim-articulo').click(function(e){
+               var Art = $(this).data('id');
+               var Articulo = "ARTICULO : " + $(this).data('titulo');
+               $("#titulo-borrado").text(Articulo);
+               $(".modal-footer #articuloid").val( Art);
           });
     $('.open-suprim-prueba').click(function(e){
                var Pru = $(this).data('id');
@@ -212,3 +217,4 @@ $(document).ready(function () {
 </script>
 </body>
 </html>
+

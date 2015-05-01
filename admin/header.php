@@ -75,9 +75,9 @@
         <div id="main-sidebar" class="sidebar sidebar-inverse">
             <div class="sidebar-item">
                 <div class="media profile">
-                    <div class="media-thumb media-left thumb-bordereb"> <a class="img-shadow" href="javascript:void(0);"><img class="thumb" src="assets/img/demo/demo-avatar9604.jpg" alt="avatar img"></a> </div>
+                    <div class="media-thumb media-left thumb-bordereb"> <a class="img-shadow"><img class="thumb" src="../<?php echo $_SESSION['foto']; ?>" alt="avatar img"></a> </div>
                     <div class="media-body">
-                        <h5 class="media-heading"><?php echo strtoupper($_SESSION['user']); ?> <small>Administrador</small></h5>
+                        <h5 class="media-heading"><?php echo strtoupper($_SESSION['name']); ?> <small>Administrador</small></h5>
                         
                     </div>
                 </div>
@@ -101,10 +101,10 @@
                 </li>
                 <!-- // item accordionMenu doctores -->
                 <li class="accordion-group">
-                    <div class="accordion-heading <?php if($block=='paciente'){echo 'active';} ?>"> <a href="#accPaciente" data-parent="#mainSideMenu" data-toggle="collapse" class="accordion-toggle"> <span class="item-icon fontello-icon-ticket"></span> <i class="chevron fontello-icon-right-open-3"></i> Articulos </a> </div>
-                    <ul class="accordion-content nav nav-list collapse <?php if($block=='paciente'){echo 'in';} ?>" id="accPaciente">
-                        <li <?php if($page=='pacientes'){echo 'class="active"';}?> > <a href="pacientes.php"> <i class=" fontello-icon-table"></i> Lista de articulos </a> </li>
-                        <li <?php if($page=='crearpaciente'){echo 'class="active"';}?> > <a href="crearPaciente.php"> <i class="fontello-icon-plus-circle"></i> Agregar nuevo articulo </a> </li>
+                    <div class="accordion-heading <?php if($block=='Art'){echo 'active';} ?>"> <a href="#accPaciente" data-parent="#mainSideMenu" data-toggle="collapse" class="accordion-toggle"> <span class="item-icon fontello-icon-newspaper"></span> <i class="chevron fontello-icon-right-open-3"></i> Articulos </a> </div>
+                    <ul class="accordion-content nav nav-list collapse <?php if($block=='Art'){echo 'in';} ?>" id="accPaciente">
+                        <li <?php if($page=='ListArt'){echo 'class="active"';}?> > <a href="articulos.php"> <i class=" fontello-icon-table"></i> Lista de articulos </a> </li>
+                        <li <?php if($page=='crearArt'){echo 'class="active"';}?> > <a href="nuevoArticulo.php"> <i class="fontello-icon-plus-circle"></i> Agregar nuevo articulo </a> </li>
                     </ul>
                 </li>
                 <!-- // item accordionMenu pacientes -->

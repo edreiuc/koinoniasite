@@ -3,7 +3,8 @@
                             <aside id="widget_name" class="widget video_slider">
                                 <h4 class="widget-title">Fan page</h4>
                                 <div>
-                                    <div class="fb-like-box" data-href="https://www.facebook.com/koinoniaband" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                                    <div class="fb-page" data-href="https://www.facebook.com/koinoniaband" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/koinoniaband"><a href="https://www.facebook.com/koinoniaband">Koinonia</a></blockquote></div></div>
+                                   <!--  <div class="fb-like-box" data-href="https://www.facebook.com/koinoniaband" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div> -->
                                 </div>
                             </aside>
 

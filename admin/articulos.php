@@ -1,16 +1,18 @@
 <?php
-$block='paciente';
-$page='pacientes';
-include ('header.php');
+$block='Art';
+$page='ListArt';
 require_once('../clases/medoo.php');
 $database = new medoo();
-$datas = $database->select("paciente", "*",["ORDER" => "paciente.nombre DESC"]);
+$datas = $database->select("articulo", "*",["ORDER" => "articulo.titulo DESC"]);
+include ('header.php');
+
+
 ?>
 
  <div id="main-content" class="main-content container-fluid">
             <div class="row-fluid page-head">
-                <h2 class="page-title"><i class="fontello-icon-th-list-3"></i> Pacientes <small>sistema de pacientes</small></h2>
-                <p class="pagedesc">Listado de pacientes</p>
+                <h2 class="page-title"><i class="fontello-icon-th-list-3"></i> Articulos <small>Control de publicaciones</small></h2>
+                <p class="pagedesc">Listado de articulos</p>
                 <div class="page-bar">
                     <div class="btn-toolbar"> </div>
                 </div>
@@ -27,10 +29,10 @@ $datas = $database->select("paciente", "*",["ORDER" => "paciente.nombre DESC"]);
                                     <table class="table table-striped table-bordered boo-table">
                                         <thead>
                                             <tr>
-                                                <th scope="col">Nombre/Apellido</th>
-                                                <th scope="col" class="hidden-phone">Telefono</th>
-                                                <th scope="col" class="hidden-tablet hidden-phone">Direccion</th>
-                                                <th scope="col"></th>
+                                                <th scope="col">Titulo</th>
+                                                <th scope="col">Fecha</th>
+                                                <th scope="col" class="hidden-tablet hidden-phone">imagen</th>
+                                                <th scope="col">Acciones</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -39,19 +41,19 @@ $datas = $database->select("paciente", "*",["ORDER" => "paciente.nombre DESC"]);
                                                 {
                                                   echo "<tr>";
                                                        echo "<td>";
-                                                       echo '<p>'.$data['nombre'].'   '.$data['apellido']."</p>";
+                                                       echo '<p>'.$data['titulo']."</p>";
                                                        echo "</td>";
                                                        echo "<td>";
-                                                       echo '<p>'.$data['telefono']."</p>";
+                                                       echo '<p>'.$data['fecha']."</p>";
                                                        echo "</td>";
                                                        echo "<td>";
-                                                       echo '<p>'.$data['direccion']."</p>";
+                                                       echo '<img class="thumbnail" width="96" height="96" src="../img_art/'.$data['thumb'].'">';
                                                        echo "</td>";
 
                                                        echo "<td>";
-                                                       echo '<a href="modificarPaciente.php?id='.$data['id_paciente'].'" class="open-suprim btn btn-info"><i class="fa fa-pencil-square"></i> Modificar</a>';
+                                                       echo '<a href="modificarArticulo.php?idA='.$data['id_articulo'].'" class="open-suprim btn btn-info"><i class="fa fa-pencil-square"></i> Modificar</a>';
                                                        echo '&nbsp; &nbsp;
-                                                            <a class="open-suprim-paciente btn btn-danger btn-md" data-id="'.$data['id_paciente'].'" data-titulo="'.$data['nombre'].' '.$data['apellido'].'" data-toggle="modal" data-target="#myModal">
+                                                            <a class="open-suprim-articulo btn btn-danger btn-md" data-id="'.$data['id_articulo'].'" data-titulo="'.$data['titulo'].'" data-toggle="modal" data-target="#myModal">
                                                               <i class="fa fa-minus-square"></i> Borrar
                                                              </a>';
                                                        echo "</td>";
@@ -81,16 +83,16 @@ $datas = $database->select("paciente", "*",["ORDER" => "paciente.nombre DESC"]);
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                  <h3 class="modal-title" id="myModalLabel">Borrar registro de paciente</h3>
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">cerrar</span></button>
+                  <h3 class="modal-title" id="myModalLabel">Borrar registro del articulo</h3>
                 </div>
                 <div class="modal-body">
                    <p>¿ Está seguro de continuar con la operación ?</p>
                    <p class="alert alert-info" id="titulo-borrado"></p>
                 </div>
                 <div class="modal-footer">
-                  <form method="POST" action="borrarPaciente.php">
-                    <input type="hidden"  name="pacienteid" id="pacienteid" value="">
+                  <form method="POST" action="borrarArticulo.php">
+                    <input type="hidden"  name="articuloid" id="articuloid" value="">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                     <button type="submit" class="btn btn-danger" id="confirm">Borrar</button>
                   </form>

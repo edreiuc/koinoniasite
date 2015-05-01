@@ -1,11 +1,10 @@
 <?php
-$block='residentes';
-$page='doctores';
+$block='events';
+$page='eventos';
 include ('header.php');
 require_once('../clases/medoo.php');
 $database = new medoo();
 $datas = $database->select("evento", "*",["ORDER" => "evento.evento DESC"]);
-
 ?>
 
  <div id="main-content" class="main-content container-fluid">

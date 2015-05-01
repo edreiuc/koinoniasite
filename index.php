@@ -1,5 +1,9 @@
 <?php
- include 'header.php';
+require_once('clases/medoo.php');
+$database = new medoo();
+$datas = $database->select("articulo", "*",["ORDER" => "articulo.fecha DESC"]);
+
+include 'header.php';
 ?>
 <div id="content" class="site-content">
 
@@ -185,97 +189,36 @@
                         <div id="primary" class="content-area">
                             
                             <div class="recent_news">
-                                <h4 class="widget_heading">Recientes Actividades</h4>
+                                <h4 class="widget_heading">Articulos Recientes</h4>
 
-                                <article class="post clearfix">
+                                <?php 
+                                foreach ($datas as $data) 
+                                {
+
+                                $time= strtotime($data['fecha']);
+                                echo '<article class="post clearfix">
                                     <div class="entry-thumb">
                                        
-                                            <img class="dark_shadow" src="thumb/album/album1.jpg" alt="News3">
+                                            <img class="dark_shadow" style="height:170px;" src="img_art/'.$data['thumb'].'" alt="'.$data['titulo'].'">
                                
                                     </div>
                                     <div class="entry-detail">
                                         <div class="entry-header">
-                                            <h2 class="entry-title">koinonia test 1</h2>
+                                            <h2 class="entry-title">'.$data['titulo'].'</h2>
                                             <div class="entry-meta">
-                                                <span class="posted-on">Marzo 10, 2015</span>
+                                                <span class="posted-on">'.date('M', $time).' '.date('d', $time).', '.date('Y', $time).'</span>
                                             </div>
                                             <div class="entry-content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p>'.$data['detalle'].'</p>
                                             </div>
                                             <div class="entry-more">
-                                                <a href="#" class="ui button">Leer más</a>
+                                                <a href="articulo.php?idA='.$data['id_articulo'].'" class="ui button">Leer más</a>
                                             </div>
                                         </div>
                                     </div>
-                                </article>
-
-                                <article class="post clearfix">
-                                    <div class="entry-thumb">
-                                        
-                                            <img class="dark_shadow" src="thumb/album/album2.jpg" alt="News3">
-                                    
-                                    </div>
-                                    <div class="entry-detail">
-                                        <div class="entry-header">
-                                            <h2 class="entry-title">koinonia test 2</h2>
-                                            <div class="entry-meta">
-                                                <span class="posted-on">Marzo 10, 2015</span>
-                                            </div>
-                                            <div class="entry-content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            </div>
-                                            <div class="entry-more">
-                                                <a href="#" class="ui button">Leer más</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                
-                                <article class="post clearfix">
-                                    <div class="entry-thumb">
-                                       
-                                            <img class="dark_shadow" src="thumb/album/album3.jpg" alt="News3">
-                                  
-                                    </div>
-                                    <div class="entry-detail">
-                                        <div class="entry-header">
-                                            <h2 class="entry-title">koinonia test 3</h2>
-                                            <div class="entry-meta">
-                                                <span class="posted-on">Marzo 10, 2015</span>
-                                                
-                                            </div>
-                                            <div class="entry-content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            </div>
-                                            <div class="entry-more">
-                                                <a href="#" class="ui button">Leer más</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                
-                                <article class="post clearfix">
-                                    <div class="entry-thumb">
-                                       
-                                            <img class="dark_shadow" src="thumb/album/album4.jpg" alt="News3">
-                                  
-                                    </div>
-                                    <div class="entry-detail">
-                                        <div class="entry-header">
-                                            <h2 class="entry-title">koinonia test 4</h2>
-                                            <div class="entry-meta">
-                                                <span class="posted-on">Marzo 10, 2015</span>
-                                            </div>
-                                            <div class="entry-content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            </div>
-                                            <div class="entry-more">
-                                                <a href="#" class="ui button">Leer más</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                
+                                </article>';
+                                }
+                                ?>                                
                             </div>
 
                         </div> <!-- END #primary -->

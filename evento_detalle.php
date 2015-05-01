@@ -9,7 +9,7 @@ $datas = $database->select("evento", "*", [
 $data=$datas[0];
 if(!isset($data['id_evento']))
 {
-    header('Location:events.php');
+    $event = $database->select("evento");
 }
 
 include 'header.php';

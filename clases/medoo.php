@@ -16,7 +16,7 @@ class medoo
 
 	protected $username = 'koinoband';
 
-	protected $password = 'koino8';
+	protected $password = 'koinopass';
 
 	// For SQLite
 	protected $database_file = '';
