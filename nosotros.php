@@ -30,7 +30,7 @@ include 'header.php';
                                             <div class="overlay"></div>
                                             <div class="overlay_title">
                                                 <h2>Gustavo Angulo</h2>
-                                                <p>Vocalista</p>
+                                                <p>coro</p>
                                             </div>
                                         </a>
                                     </div>
